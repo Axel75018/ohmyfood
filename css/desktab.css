@@ -1,0 +1,29 @@
+html {background-color:#99E2D0}
+
+body {
+    width: 60%;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ol.listeBoutonFonctionnement__ol {
+    width: auto;
+}
+
+.listeBoutonFonctionnement__li {
+    width: 400px;
+}
+
+article.card {
+    height: 400px;
+}
+
+article.card figure img {
+    height: 300px;
+}
