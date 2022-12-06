@@ -9,6 +9,7 @@
 
 html {
     background-color: white;
+    color: black;
     font-family: "Roboto", sans-serif;
 }
 
@@ -55,6 +56,7 @@ p {
 
 a {
     text-decoration: none;
+    
 }
 a:visited {
     color: inherit;
@@ -308,7 +310,7 @@ margin: 20px auto;
 /*------main---------------*/
 .menu__main {
     min-height: 282px;
-    background-image: url("/images/restaurants/jay-wennington.jpg");
+    background-image: url("images/restaurants/jay-wennington.jpg");
     background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed;
