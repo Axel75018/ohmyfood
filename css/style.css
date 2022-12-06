@@ -308,11 +308,20 @@ div.footer__logo {
 margin: 20px auto;
 }
 /*------main---------------*/
-.menu__main {
-    min-height: 282px;
-    background-image: url("images/restaurants/jay-wennington.jpg");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed;
-    background-size:100% 282px;
-    }
+main.menu__main {
+    z-index: auto;
+    position: relative;
+}
+img.menu__main__baniere {
+    height: 260px;
+    z-index: 1;
+    object-fit:fill;    
+}
+section.titre__resto {
+background-color:aquamarine;
+z-index: 7;
+position: relative;
+top: -100px;
+height: 200px;
+border-radius: 25px 25px 0 0;
+}
