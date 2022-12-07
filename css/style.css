@@ -21,6 +21,7 @@ h1 {
     font-family: "Shrikhand", cursive;
     font-size: 1.7em;
     font-weight: 400;
+    display: inline-block;
 
 }
 
@@ -73,18 +74,15 @@ a:visited {
     width: 100%;
     border-bottom: #cecece 1px solid;
     padding-top: 0px;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
     }
 
 .header__h1 {
 
-    width: 165px;
-    height:35px;
-    margin: 0 auto;
-    color: transparent;
-    background-image: url(/images/logo/ohmyfood@2x.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    
     
 }
 
@@ -294,13 +292,16 @@ div.footer__logo {
 .footer__ul li {
     margin-top:0.9em;
 }
-/*------------Page menu --------------------*/
-
+/*------------Page resto menu --------------------*/
+.header.menu__header {
+    justify-content: flex-start;
+    gap: 25%;
+    padding: 0 20px;
+}
 
 .menu__header i {
     font-size: 1.5em;
-    float: left;
-    margin-left:20px;
+    
     
 }
 
@@ -312,31 +313,59 @@ main.menu__main {
     z-index: auto;
     position: relative;
     
-
 }
+.entrees, .plat, .dessert, .commander {}
+
 img.menu__main__baniere {
     height: 260px;
+    width:100%;
     z-index: 1;
     object-fit:fill;    
 }
 div.tothemoon
-{   z-index: 7;
+{   width: 100%;
+    z-index: 7;
     position: relative;
     top:-100px;
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
+    background-color:#f7f7f7;
+    padding : 0  10px;
+    border-radius: 25px 25px 0 0;
 }
+
+
 
 section.titre__resto {
-background-color:aquamarine;
 
-
-height: 200px;
-border-radius: 25px 25px 0 0;
+margin-top: 20px;
+display: flex;
+flex-direction: row;
+align-items: baseline;
+justify-content: space-around;
 }
 
-section.entrees {
-    
-    background-color: #008766;
+section.titre__resto i.fa-heart {
+    font-size: 1.5em;
+}
+
+/******entrées******/
+.menu__main h2 {
+    color:#666666;
+    font-size: 1em ;
+    font-weight: 400; 
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;  
+}
+
+.menu__main h2:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 1px solid #99E2D0;
 }
