@@ -459,9 +459,13 @@ div.plat:hover  div.check {
     height: 50px;
     width: 60px;
     border-radius: 0 10px 10px 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 div.plat:hover div.noCheck {
     flex-grow: 1;  
     transition: 1s;  
+}
+
+section.plats h2 {
+    margin-left:40px;    
 }
