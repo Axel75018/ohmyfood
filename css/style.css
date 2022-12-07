@@ -69,7 +69,7 @@ a {
 }
 
 a:visited {
-    color: inherit;
+    color: black;
 }
 
 .shadow {
@@ -307,6 +307,9 @@ div.footer__logo {
 .footer__ul li {
     margin-top: 0.9em;
 }
+.footer__ul a {
+color:white;
+}
 
 /*------------Page resto menu --------------------*/
 .header.menu__header {
@@ -331,7 +334,7 @@ main.menu__main {
 }
 
 .entrees,
-.plat,
+.plats,
 .dessert,
 .commander {
     padding: 0 10px;
@@ -468,4 +471,12 @@ div.plat:hover div.noCheck {
 
 section.plats h2 {
     margin-left:40px;    
+}
+section.commander {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.commander button {
+    margin: 20px 0;
 }
