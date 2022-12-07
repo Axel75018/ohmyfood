@@ -312,27 +312,40 @@ margin: 20px auto;
 main.menu__main {
     z-index: auto;
     position: relative;
+    background-color: #9356DC;
     
 }
 .entrees, .plat, .dessert, .commander {}
 
 img.menu__main__baniere {
-    height: 260px;
+    height: 320px;
     width:100%;
     z-index: 1;
     object-fit:fill;    
 }
-div.tothemoon
-{   width: 100%;
+div.bordrondsup {
+    background-color:#ffffff;
+    padding : 0  10px;
+    border-radius: 25px 25px 0 0;
     z-index: 7;
-    position: relative;
-    top:-100px;
+    width: 100%;
+    height: 80px;
+    top:254px;
+    position:absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+
+}
+
+div.tothemoon
+{   width: 100%;    
+    background-color:#ffffff;
     display: flex;
     flex-direction: column;
     justify-items: flex-start;
-    background-color:#f7f7f7;
-    padding : 0  10px;
-    border-radius: 25px 25px 0 0;
+   
 }
 
 
