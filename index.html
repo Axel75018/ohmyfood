@@ -21,7 +21,32 @@
 
 </head>
 
-<body>
+<body class="parentDisable">
+ <!-----   ---------desctive fond-
+    <div className={this.state.loading ? 'parentDisable' : '' } width="100%">
+        <div className='overlay-box'>
+            <PropagateLoader // css={override} sizeUnit={"px"} size={25} color={'white'} loading={this.state.loading} />
+
+            <!------spinner-
+            <div class="lds-spinner ">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!----fin spinner ----
+        
+        </div>
+    </div>
+    ----->
     <header class="header">
         <a href="#">
             <h1 class="fancy">Ohmyfood</h1>
@@ -37,7 +62,7 @@
         <section class="explorer">
             <h2 class="explorer__h2"><strong>Réservez le menu qui vous convient</strong></h2>
             <p class="explorer__p">Découvrez des restautants d'exception, selectionnés par nos soins.</p>
-            <a href="#"><button class="explorer__button shadow">Explorer nos restaurants</button></a>
+            <button class="explorer__button shadow">Explorer nos restaurants</button>
         </section>
         <!--------------fonctionnement------------------>
         <section class="fonctionnement">
