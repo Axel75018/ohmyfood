@@ -21,14 +21,14 @@
 
 </head>
 
-<body class="parentDisable">
+<body class="">
  <!-----   ---------desctive fond-
     <div className={this.state.loading ? 'parentDisable' : '' } width="100%">
         <div className='overlay-box'>
             <PropagateLoader // css={override} sizeUnit={"px"} size={25} color={'white'} loading={this.state.loading} />
 
-            <!------spinner-
-            <div class="lds-spinner ">
+            <!------spinner---
+            <div class="lds-spinner spinnerA">
                 <div></div>
                 <div></div>
                 <div></div>
@@ -42,7 +42,7 @@
                 <div></div>
                 <div></div>
             </div>
-            <!----fin spinner ----
+            <!----fin spinner ---
         
         </div>
     </div>
@@ -80,6 +80,7 @@
         <!----------- ------------------------resto----------------------------->
         <section class="resto">
             <h2>Restaurants</h2>
+            <div class="liste">
             <article class="card">
                 <a href="la_palette_du_gout.html">
                     <h4 class="article__h4 article__h4--nouveau">Nouveau</h4>
@@ -147,6 +148,7 @@
                     </div>
                 </a>
             </article>
+        </div>
         </section>
 
     </main>

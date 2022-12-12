@@ -500,7 +500,7 @@ section.commander button {
     margin: 20px 0;
 }
 
-/********* spiner *****
+/********* spiner ******/
 .lds-spinner {
     color: #9356DC;
     display: inline-block;
@@ -601,3 +601,32 @@ section.commander button {
     z-index: 1000;
   }
   ****/
+
+  /*open ai
+  body {
+    visibility: hidden;
+    animation-delay: 2s;
+    animation-duration: 0s;
+    animation-fill-mode:backwards;
+  }
+  
+  .spinnerA {
+    visibility: visible;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-fill-mode:none;
+  }
+  */
+
+  /******anim*****/
+   .listePlat,  {
+    position: relative;
+
+  }
+  .plat{position:relative;}
+
+  .plat{}
