@@ -311,9 +311,7 @@ footer {
     padding: 25px 20px;
 }
 
-h2.footer_h2 {
 
-}
 
 .footer__ul {
     list-style: none;
@@ -499,6 +497,24 @@ div.plat:hover div.noCheck  {
 section.plats h2 {
     margin-left:40px;    
 }
+/*****div plat anim ****/
+$anim-delay:600ms;
+@keyframes animplat {
+    0% {transform: scale(0.5);    }
+    100%{ transform: scale(1);}
+    
+}
+
+
+.plat {
+     @for $i from 1 through 9 {
+        &--anim#{$i} {
+        animation-delay: $anim-delay*$i;
+        animation: animplat 500ms before ;
+    }
+     } 
+}
+
 section.commander {
     display: flex;
     flex-direction: column;
