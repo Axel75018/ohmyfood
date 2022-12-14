@@ -1,9 +1,9 @@
-html {background-color:#99E2D0}
+html {background-color:#fff}
 
 body {
     width: 100%;
-    padding: 0 40px;
-    margin: auto;
+    
+    
 }
 div.bordrondsup {
     top: 540px;
@@ -12,6 +12,11 @@ div.bordrondsup {
 img.menu__main__baniere {
     object-fit:cover;
     height: 600px;
+}
+div.container, section.resto {
+    width :100%;
+    max-width: 1280px;
+    margin: auto;
 }
 .explorer__h2 {width:100%;}
 div.banniere {
@@ -25,30 +30,31 @@ div.banniere {
 }
 
 ol.listeBoutonFonctionnement__ol {
-    width: auto;
+    width: 100%;
     display: flex;
-    gap: 40px;
+    justify-content: space-between;
 
 }
 
 .listeBoutonFonctionnement__li {
-    width: 300px;
+    width: 30%;
     display: inline;
 }
 
 div.liste {
-    height: 650px;
     display:flex;
     flex-direction: row;
-    justify-content: flex-start;
-    
-    gap: 50px;
-    flex-wrap: wrap;   
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;   
 
 }
 article.card {
     width: 45%;
     height : 250px;
+    margin:1px;
 }
 
 article.card figure img {
