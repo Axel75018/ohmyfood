@@ -15,16 +15,33 @@ main  {
     width :100%;
     margin: auto;
 }
+.menu__main {
+    display: flex;
+    flex-direction: column;
+}
 
-section.fonctionnement div.container , section.resto div.container, footer div.container {
+section.fonctionnement div.container , section.resto div.container, footer div.container, .menu__main
+{
     width:100%;
     max-width:1280px;
     margin:auto;
 }
 
-/*section.resto {displa}*/
+.menu__main {
+    background-color:#f2f2f2;
+    margin-top:-150px;
+}
 
+.containerMenu {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.entrees, .plats, .dessert {
+    width: 32%;
+}
 
+section.entrees { padding-top: 0px;}
 
 div.titreresto {justify-content: space-around;}
 .explorer__h2 {width:100%;}
@@ -74,4 +91,13 @@ article.card figure img {
 .header.menu__header {
     width:52%;
     justify-content: space-between;
+}
+
+section.commander{
+    width:100%;
+}
+footer div.container {
+width:100%;
+    max-width:1280px;
+    margin:auto;
 }
