@@ -369,12 +369,10 @@ i.fa-heart {
   color: transparent;
 }
 
-div.tothemoon {
-  width: 100%;
-  background-color: #ffffff;
+div.containerMenu {
   display: flex;
   flex-direction: column;
-  justify-items: flex-start;
+  width: 100%;
 }
 
 .menu__main h2 {
@@ -416,7 +414,6 @@ div.plat {
   transition: 0.3s;
   margin: 10px 0;
   padding: 0;
-  animation: animplat 500ms before;
 }
 
 div.plat div.noCheck {
@@ -476,6 +473,9 @@ section.plats h2 {
 /*****div plat anim ****/
 @keyframes animplat {
   0% {
+    transform: scale(0.1);
+  }
+  50% {
     transform: scale(0.5);
   }
   100% {
@@ -483,35 +483,54 @@ section.plats h2 {
   }
 }
 .plat--anim1 {
-  animation-delay: 606ms;
+  animation-delay: 10000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 .plat--anim2 {
-  animation-delay: 1212ms;
+  animation-delay: 20000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 .plat--anim3 {
-  animation-delay: 1818ms;
+  animation-delay: 30000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 .plat--anim4 {
-  animation-delay: 2424ms;
+  animation-delay: 40000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 .plat--anim5 {
-  animation-delay: 3030ms;
+  animation-delay: 50000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 .plat--anim6 {
-  animation-delay: 3636ms;
+  animation-delay: 60000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 .plat--anim7 {
-  animation-delay: 4242ms;
+  animation-delay: 70000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 .plat--anim8 {
-  animation-delay: 4848ms;
+  animation-delay: 80000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 .plat--anim9 {
-  animation-delay: 5454ms;
+  animation-delay: 90000ms;
+  animation: animplat;
+  animation-duration: 400ms;
 }
 
 section.commander {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
 }
