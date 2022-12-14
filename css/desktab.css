@@ -5,19 +5,19 @@ body {
     
     
 }
-div.bordrondsup {
-    top: 540px;
-    100px 100px 0 0px
-}
+
 img.menu__main__baniere {
     object-fit:cover;
-    height: 600px;
+    height: 500px;
 }
-div.container, section.resto {
+
+main  {
     width :100%;
     max-width: 1280px;
     margin: auto;
 }
+
+div.titreresto {justify-content: space-around;}
 .explorer__h2 {width:100%;}
 div.banniere {
     width: 100%;
@@ -60,9 +60,6 @@ article.card {
 article.card figure img {
     width: 100%;
     
-}
-.bordrondsup {
-    top: 600px;
 }
 
 .header.menu__header {
