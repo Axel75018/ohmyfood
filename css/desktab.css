@@ -13,9 +13,18 @@ img.menu__main__baniere {
 
 main  {
     width :100%;
-    max-width: 1280px;
     margin: auto;
 }
+
+section.fonctionnement div.container , section.resto div.container, footer div.container {
+    width:100%;
+    max-width:1280px;
+    margin:auto;
+}
+
+/*section.resto {displa}*/
+
+
 
 div.titreresto {justify-content: space-around;}
 .explorer__h2 {width:100%;}
