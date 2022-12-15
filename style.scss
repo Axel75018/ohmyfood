@@ -504,7 +504,7 @@ $anim-delay:100ms;
         /*transform: scale(0.1);*/
         opacity: 0;
     } 
-    90%{ opacity: 0.5;}   
+    80%{ opacity: 0.5;}   
     100%{ 
         /*transform: scale(1);*/
         transform: translate(0,0px);
@@ -518,6 +518,7 @@ div.containerMenu div.plat {
     animation-name: animplat;
     animation-duration: 600ms;
     animation-fill-mode: both;
+    animation-timing-function: ease-out;
     
     
 }
