@@ -501,40 +501,40 @@ div.containerMenu div.plat {
 }
 
 .plat.plat--anim1 {
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 .plat.plat--anim2 {
-  -webkit-animation-delay: 10000ms;
-          animation-delay: 10000ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 .plat.plat--anim3 {
-  -webkit-animation-delay: 15000ms;
-          animation-delay: 15000ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 .plat.plat--anim4 {
-  -webkit-animation-delay: 20000ms;
-          animation-delay: 20000ms;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 .plat.plat--anim5 {
-  -webkit-animation-delay: 25000ms;
-          animation-delay: 25000ms;
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
 }
 .plat.plat--anim6 {
-  -webkit-animation-delay: 30000ms;
-          animation-delay: 30000ms;
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
 }
 .plat.plat--anim7 {
-  -webkit-animation-delay: 35000ms;
-          animation-delay: 35000ms;
+  -webkit-animation-delay: 1400ms;
+          animation-delay: 1400ms;
 }
 .plat.plat--anim8 {
-  -webkit-animation-delay: 40000ms;
-          animation-delay: 40000ms;
+  -webkit-animation-delay: 1600ms;
+          animation-delay: 1600ms;
 }
 .plat.plat--anim9 {
-  -webkit-animation-delay: 45000ms;
-          animation-delay: 45000ms;
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
 }
 
 section.commander {

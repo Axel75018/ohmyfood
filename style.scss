@@ -500,8 +500,7 @@ section.plats h2 {
 
 $anim-delay:100ms;
 @keyframes animplat {
-    0% {transform: scale(0.1);    }
-    
+    0% {transform: scale(0.1);}    
     100%{ transform: scale(1);}
     
 }
@@ -517,7 +516,7 @@ div.containerMenu div.plat {
 .plat {
      @for $i from 1 through 9 {
         &.plat--anim#{$i} {
-        animation-delay: $anim-delay*$i*50; 
+        animation-delay: $anim-delay*$i*2; 
                             
     }
      } 
