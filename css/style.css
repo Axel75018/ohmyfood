@@ -482,50 +482,36 @@ section.plats h2 {
     transform: scale(1);
   }
 }
-.plat--anim1 {
+div.containerMenu div.plat {
+  animation: animplat 400ms;
+}
+
+.plat.plat--anim1 {
+  animation-delay: 5000ms;
+}
+.plat.plat--anim2 {
   animation-delay: 10000ms;
-  animation: animplat;
-  animation-duration: 400ms;
 }
-.plat--anim2 {
+.plat.plat--anim3 {
+  animation-delay: 15000ms;
+}
+.plat.plat--anim4 {
   animation-delay: 20000ms;
-  animation: animplat;
-  animation-duration: 400ms;
 }
-.plat--anim3 {
+.plat.plat--anim5 {
+  animation-delay: 25000ms;
+}
+.plat.plat--anim6 {
   animation-delay: 30000ms;
-  animation: animplat;
-  animation-duration: 400ms;
 }
-.plat--anim4 {
+.plat.plat--anim7 {
+  animation-delay: 35000ms;
+}
+.plat.plat--anim8 {
   animation-delay: 40000ms;
-  animation: animplat;
-  animation-duration: 400ms;
 }
-.plat--anim5 {
-  animation-delay: 50000ms;
-  animation: animplat;
-  animation-duration: 400ms;
-}
-.plat--anim6 {
-  animation-delay: 60000ms;
-  animation: animplat;
-  animation-duration: 400ms;
-}
-.plat--anim7 {
-  animation-delay: 70000ms;
-  animation: animplat;
-  animation-duration: 400ms;
-}
-.plat--anim8 {
-  animation-delay: 80000ms;
-  animation: animplat;
-  animation-duration: 400ms;
-}
-.plat--anim9 {
-  animation-delay: 90000ms;
-  animation: animplat;
-  animation-duration: 400ms;
+.plat.plat--anim9 {
+  animation-delay: 45000ms;
 }
 
 section.commander {

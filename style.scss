@@ -507,14 +507,14 @@ $anim-delay:100ms;
     
 }
 
-
+div.containerMenu div.plat {
+    animation: animplat 400ms ;
+}
 .plat {
      @for $i from 1 through 9 {
-        &--anim#{$i} {
-        animation-delay: $anim-delay*$i*100;
-        animation: animplat;   
-        animation-duration: 400ms;  
-                    
+        &.plat--anim#{$i} {
+        animation-delay: $anim-delay*$i*50;     
+                            
     }
      } 
 }
