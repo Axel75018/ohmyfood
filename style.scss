@@ -540,7 +540,7 @@ section.commander button {
     margin: 20px 0;
 }
 
-/********* spiner ******/
+/********* spinner ******/
 .lds-spinner {
     color: #9356DC;
     display: inline-block;
@@ -620,34 +620,22 @@ section.commander button {
     }
   }
 
-  /*******desactive le fond *****
-  .parentDisable{
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #666;
-    opacity: 0.8;
-    z-index: 998;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .overlay-box {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    color: white; background: #666666; opacity: .8;
-    z-index: 1000;
-  }
-  ****/
 
-  /*open ai
+  /*open ai*/
+  @keyframes backgrounddis {
+    0% { visibility: hidden;}
+    100% {visibility: visible;}
+  }
+  @keyframes backgroundapp {
+    0% { visibility: visible;}
+    100% {visibility: hidden;}
+  }
   body {
     visibility: hidden;
+    animation-name: backgrounddis ;
     animation-delay: 2s;
     animation-duration: 0s;
-    animation-fill-mode:backwards;
+    animation-fill-mode:forwards;
   }
   
   .spinnerA {
@@ -656,11 +644,12 @@ section.commander button {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    animation-name: backgroundapp;
     animation-delay: 0s;
     animation-duration: 2s;
-    animation-fill-mode:none;
+    animation-fill-mode:forwards;
   }
-  */
+ 
 
   /******anim*****/
    .listePlat  {
@@ -669,4 +658,3 @@ section.commander button {
   }
   .plat{position:relative;}
 
-.test{width: 100%;;}
