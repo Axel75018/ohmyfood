@@ -366,6 +366,7 @@ i.fa-heart {
   content: "\f004";
   background: linear-gradient(0deg, #9356dc, #ff79da);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -445,13 +446,15 @@ div.plat .check {
   display: none;
 }
 
-div.plat:hover, div.plat a:focus {
+div.plat:hover,
+div.plat a:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-div.plat:hover div.check, div.plat a:focus {
+div.plat:hover div.check,
+div.plat a:focus {
   display: block;
   background-color: #99E2D0;
   margin-left: 10px;
@@ -643,7 +646,7 @@ section.commander button {
     visibility: hidden;
   }
 }
-body {
+body.home {
   visibility: hidden;
   animation-name: backgrounddis;
   animation-delay: 2s;
