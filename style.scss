@@ -272,7 +272,7 @@ div.containerBasCard {
     margin-top: 12px;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     padding: 0px 15px;
 }
@@ -300,11 +300,29 @@ article.card:hover {
     box-shadow: 0 24px 30px 0 rgba(0, 0, 0, 0.4);
     transition: 0.5s;
 }
+.fa-heart.fa-solid {opacity:0;
+z-index: 5;}
 
+@keyframes heartappear {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+.containerBasCard div.heart {
+    position:relative;
+    height: 0.5rem;
+}
+.fa-heart {position: absolute;
+            top:0;
+            right:0;}
 
-.containerBasCard i:hover {
-    font-size: 1.8em;
-    color: red;
+.containerBasCard div.heart:hover .fa-heart.fa-regular {
+    visibility: hidden;  
+    transition-duration: 4000ms;
+}
+.containerBasCard div.heart:hover .fa-heart.fa-solid {
+    opacity:1;
+    transition-duration: 800ms;
+    transition-timing-function: cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
 
 }
 
@@ -481,10 +499,10 @@ div.plat div.descPrix h3.prix {
 
 }
 
-div.plat .check {
-    display: none;
-}
 
+div.plat .check i {color:white;
+                font-size: 1.5rem;
+            margin:auto;}
 div.plat:hover,
 div.plat a:focus {
     display: flex;
@@ -493,16 +511,34 @@ div.plat a:focus {
 
 
 }
-
-div.plat:hover div.check,
-div.plat a:focus {
-    display: block;
+div.check { 
+    display: none; 
     background-color: #99E2D0;
     margin-left: 10px;
     height: 50px;
     width: 60px;
-    border-radius: 0 10px 10px 0;
-    transition: 0.5s;
+    border-radius: 0 10px 10px 0;}
+
+@keyframes checkgrow {
+    0%{transform: scaleX(0);}
+    100%{transform: scaleX(1);
+        }
+    
+}
+
+div.plat:hover div.check {
+    display:flex;
+    animation-name: checkgrow;
+    animation-duration: 1s;
+    transform-origin: right;
+}
+@keyframes rotateI {
+0% {transform: rotate(0);}
+100%{transform: rotate(3turns);}
+}
+
+div.plat:hover div.check i {
+    animation-name: rotateI;
 }
 
 div.plat:hover div.noCheck {
@@ -521,29 +557,34 @@ $anim-delay: 100ms;
 
 @keyframes animplat {
     0% {
-        transform: translate(0, -400px);
+        transform: translate(0, 20px);
         /*transform: scale(0.1);*/
         opacity: 0;
     }
 
-    90% {
+    50% {
         opacity: 0.5;
     }
+    85%,94% {};    
+        
 
-    100% {
+        
+
+    95%,100% {
         /*transform: scale(1);*/
         transform: translate(0, 0px);
         opacity: 1;
+        
     }
 
 
 }
 
 div.containerMenu div.plat {
-    transform: scale(1);
+    
     animation-name: animplat;
-    animation-duration: 600ms;
-    animation-fill-mode: both;
+    animation-duration: 400ms;
+    animation-fill-mode: backwards;
 
 
 }
