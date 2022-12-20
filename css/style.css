@@ -21,30 +21,32 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-h1 {
-  font-size: 1.7em;
+.menu__main h2.fancy, h1.fancy {
+  font-family: "Shrikhand", cursive;
+  font-weight: bold;
+  display: inline-block;
+  color: black;
+  font-style: italic;
+  border: none;
 }
 
-.fancy {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-  display: inline-block;
+.menu__main h2.fancy:before {
+  content: none;
+}
+
+h1 {
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: 1.5em;
   font-weight: 700;
-}
-
-h3 {
-  font-size: 1em;
 }
 
 h4 {
   color: mediumaquamarine;
   background-color: mintcream;
   width: 100px;
-  font-size: 0.8em;
+  font-size: 0.8rem;
 }
 
 body {
@@ -53,9 +55,6 @@ body {
   margin: 0;
 }
 
-/*main {
-    padding: 0 20px;
-}*/
 p {
   font-size: 0.75rem;
 }
@@ -83,6 +82,20 @@ a:visited {
   flex-direction: row;
   justify-content: center;
   align-items: baseline;
+  position: relative;
+}
+
+.centerLeft {
+  position: absolute;
+  top: 33%;
+  left: 2rem;
+  z-index: 4;
+  justify-self: center;
+}
+
+.center {
+  margin: 0 auto;
+  z-index: 1;
 }
 
 /*------------------geoloc------------*/
@@ -300,7 +313,7 @@ article.card:hover {
   height: 0.5rem;
 }
 
-.fa-heart {
+.fa-heart.hautDroite {
   position: absolute;
   top: 0;
   right: 0;
@@ -340,13 +353,12 @@ footer {
 
 /*------------Page resto menu --------------------*/
 .header.menu__header {
-  justify-content: flex-start;
-  gap: 25%;
+  justify-content: center;
   padding: 0 20px;
 }
 
 .menu__header i {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 /*------main---------------*/
@@ -360,7 +372,7 @@ footer {
 .menu__main {
   position: relative;
   background-color: white;
-  margin-top: -200px;
+  margin-top: -100px;
   padding: 0 10px;
   border-radius: 25px 25px 0 0;
   display: flex;
@@ -384,15 +396,11 @@ div.titreresto {
   align-items: baseline;
 }
 
-h1.h1--fancy {
-  margin: 40px 0 0 0;
-}
-
 i.fa-heart {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
-.fa-heart::before {
+.fa-solid::before {
   content: "\f004";
   background: linear-gradient(0deg, #9356dc, #ff79da);
   background-clip: text;
@@ -408,7 +416,6 @@ div.containerMenu {
 
 .menu__main h2 {
   color: #666666;
-  font-size: 1em;
   font-weight: 400;
   display: inline-block;
   padding-bottom: 5px;
@@ -422,7 +429,7 @@ div.containerMenu {
   height: 1px;
   bottom: 0;
   left: 0;
-  border-bottom: 1px solid #99E2D0;
+  border-bottom: 3px solid #99E2D0;
 }
 
 /******entrées******/
@@ -720,6 +727,7 @@ body.home {
 /******anim*****/
 .listePlat {
   position: relative;
+  text-overflow: ellipsis;
 }
 
 .plat {

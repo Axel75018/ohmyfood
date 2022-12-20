@@ -21,32 +21,35 @@ html {
     font-family: "Roboto", sans-serif;
 }
 
-h1 {
-    font-size: 1.7em;
 
-}
-
-.fancy {
+.menu__main h2.fancy, h1.fancy {
     font-family: "Shrikhand", cursive;
-    font-weight: 400;
+    font-weight: bold;
     display: inline-block;
+    color: black;
+    font-style: italic;
+    border:none;
+}
+.menu__main h2.fancy:before {
+    content:none;
 
 }
+h1 {
+    
+    font-size: 2rem;
+}
 
-h2 {
-    font-size: 1.5em;
+h2 {   
+   
     font-weight: 700;
 }
 
-h3 {
-    font-size: 1em;
-}
 
 h4 {
     color: mediumaquamarine;
     background-color: mintcream;
     width: 100px;
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 body {
@@ -55,9 +58,6 @@ body {
     margin: 0;
 }
 
-/*main {
-    padding: 0 20px;
-}*/
 
 p {
     font-size: 0.75rem;
@@ -88,7 +88,19 @@ a:visited {
     flex-direction: row;
     justify-content: center;
     align-items: baseline;
+    position:relative;
 }
+
+.centerLeft {
+    position: absolute;
+    top:33%;
+    left:2rem;
+    z-index:4;
+    justify-self: center;
+}
+
+.center {margin:0 auto;
+z-index:1}
 
 
 
@@ -300,29 +312,43 @@ article.card:hover {
     box-shadow: 0 24px 30px 0 rgba(0, 0, 0, 0.4);
     transition: 0.5s;
 }
-.fa-heart.fa-solid {opacity:0;
-z-index: 5;}
+
+.fa-heart.fa-solid {
+    opacity: 0;
+    z-index: 5;
+}
 
 @keyframes heartappear {
-    0% {opacity:0;}
-    100% {opacity:1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 .containerBasCard div.heart {
-    position:relative;
+    position: relative;
     height: 0.5rem;
 }
-.fa-heart {position: absolute;
-            top:0;
-            right:0;}
+
+.fa-heart.hautDroite {
+    position: absolute;
+    top: 0;
+    right: 0;
+    
+}
 
 .containerBasCard div.heart:hover .fa-heart.fa-regular {
-    visibility: hidden;  
+    visibility: hidden;
     transition-duration: 4000ms;
 }
+
 .containerBasCard div.heart:hover .fa-heart.fa-solid {
-    opacity:1;
+    opacity: 1;
     transition-duration: 800ms;
-    transition-timing-function: cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+    transition-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
 
 }
 
@@ -353,13 +379,14 @@ footer {
 
 /*------------Page resto menu --------------------*/
 .header.menu__header {
-    justify-content: flex-start;
-    gap: 25%;
+    justify-content: center;
+    
+  
     padding: 0 20px;
 }
 
 .menu__header i {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 
 
 }
@@ -377,7 +404,7 @@ footer {
 .menu__main {
     position: relative;
     background-color: white;
-    margin-top: -200px;
+    margin-top: -100px;
     padding: 0 10px;
     border-radius: 25px 25px 0 0;
     display: flex;
@@ -402,21 +429,19 @@ div.titreresto {
     align-items: baseline;
 }
 
-h1.h1--fancy {
-    margin: 40px 0 0 0;
-}
+
+
 
 i.fa-heart {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
-.fa-heart::before {
+.fa-solid::before {
     content: "\f004";
     background: linear-gradient(0deg, #9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
 
 
 }
@@ -430,8 +455,7 @@ div.containerMenu {
 
 
 .menu__main h2 {
-    color: #666666;
-    font-size: 1em;
+    color: #666666;    
     font-weight: 400;
     display: inline-block;
     padding-bottom: 5px;
@@ -445,7 +469,7 @@ div.containerMenu {
     height: 1px;
     bottom: 0;
     left: 0;
-    border-bottom: 1px solid #99E2D0;
+    border-bottom: 3px solid #99E2D0;
 }
 
 /******entrées******/
@@ -475,13 +499,13 @@ div.plat div.noCheck {
     margin: 5px 5px;
     display: flex;
     flex-direction: column;
-    width:320px;
+    width: 320px;
     transition: 1s;
-    
+
 }
 
 div.plat:hover div.noCheck {
-    width:260px;
+    width: 260px;
 }
 
 
@@ -508,48 +532,50 @@ div.plat div.descPrix h3.prix {
 }
 
 
-div.plat .check i {color:white;
-                font-size: 1.5rem;
-            margin:auto;}
+div.plat .check i {
+    color: white;
+    font-size: 1.5rem;
+    margin: auto;
+}
 
-div.plat:hover
- {
+div.plat:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
 
 }
-div.plat div.check { 
-    position:absolute;
+
+div.plat div.check {
+    position: absolute;
     transform: scaleX(0);
-    top:0;
-    right:0;
-    display: flex;   
+    top: 0;
+    right: 0;
+    display: flex;
     background-color: #99E2D0;
     margin-left: 10px;
     height: 50px;
     width: 60px;
     border-radius: 0 10px 10px 0;
     transform-origin: right;
-    transition: transform 800ms ease-in-out, opacity ;
-    
-        
+    transition: transform 800ms ease-in-out, opacity;
+
+
 }
 
 
 
 div.plat:hover div.check {
     transform: scaleX(1);
-    transform-origin: right;    
-     
-        
+    transform-origin: right;
+
+
 }
 
 /********rotation*****/
 
 div.check i.fa-circle-check {
-    
+
     transition: transform 2s ease-in-out;
 }
 
@@ -578,23 +604,28 @@ $anim-delay: 100ms;
     50% {
         opacity: 0.5;
     }
-    85%,94% {};    
-        
 
-        
+    85%,
+    94% {}
 
-    95%,100% {
+    ;
+
+
+
+
+    95%,
+    100% {
         /*transform: scale(1);*/
         transform: translate(0, 0px);
         opacity: 1;
-        
+
     }
 
 
 }
 
 div.containerMenu div.plat {
-    
+
     animation-name: animplat;
     animation-duration: 400ms;
     animation-fill-mode: backwards;
@@ -764,6 +795,8 @@ body.home {
 /******anim*****/
 .listePlat {
     position: relative;
+    text-overflow: ellipsis;
+    
 
 }
 
@@ -786,68 +819,80 @@ $color3: #9356DC;
 }
 */
 .loader {
-  width: 150px;
-  height: 150px;
+    width: 150px;
+    height: 150px;
 }
+
 svg {
-  width: 90%;
-  fill: none;
+    width: 90%;
+    fill: none;
 }
 
 .load {
-  transform-origin: 50% 50%;
-  stroke-dasharray: 570;
-  stroke-width: 20px;
-  &.one {
-    stroke: $color3;
-    animation: load 1.5s infinite;
-  }
-  &.two {
-    stroke: $color2;
-    animation: load 1.5s infinite;
-    animation-delay: 0.1s;
-  }
-  &.three {
-    stroke: $color1;
-    animation: load 1.5s infinite;
-    animation-delay: 0.2s;
-  }
+    transform-origin: 50% 50%;
+    stroke-dasharray: 570;
+    stroke-width: 20px;
+
+    &.one {
+        stroke: $color3;
+        animation: load 1.5s infinite;
+    }
+
+    &.two {
+        stroke: $color2;
+        animation: load 1.5s infinite;
+        animation-delay: 0.1s;
+    }
+
+    &.three {
+        stroke: $color1;
+        animation: load 1.5s infinite;
+        animation-delay: 0.2s;
+    }
 }
 
 .point {
-  animation: bounce 1s infinite ease-in-out;
-  &.one {
-    fill: $color1;
-    animation-delay: 0s;
-  }
-  &.two {
-    fill: $color2;
-    animation-delay: 0.1s;
-  }
-  &.three {
-    fill: $color3;
-    animation-delay: 0.2s;
-  }
+    animation: bounce 1s infinite ease-in-out;
+
+    &.one {
+        fill: $color1;
+        animation-delay: 0s;
+    }
+
+    &.two {
+        fill: $color2;
+        animation-delay: 0.1s;
+    }
+
+    &.three {
+        fill: $color3;
+        animation-delay: 0.2s;
+    }
 }
 
 @keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-20px);
-  }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
 }
+
 @keyframes load {
-  0% {
-    stroke-dashoffset: 570;
-  }
-  50% {
-    stroke-dashoffset: 530;
-  }
-  100% {
-    stroke-dashoffset: 570;
-    transform: rotate(360deg);
-  }
+    0% {
+        stroke-dashoffset: 570;
+    }
+
+    50% {
+        stroke-dashoffset: 530;
+    }
+
+    100% {
+        stroke-dashoffset: 570;
+        transform: rotate(360deg);
+    }
 }
