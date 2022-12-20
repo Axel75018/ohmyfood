@@ -511,7 +511,7 @@ div.plat div.descPrix h3.prix {
 div.plat .check i {color:white;
                 font-size: 1.5rem;
             margin:auto;}
-            
+
 div.plat:hover
  {
     display: flex;
@@ -532,7 +532,7 @@ div.plat div.check {
     width: 60px;
     border-radius: 0 10px 10px 0;
     transform-origin: right;
-    transition: transform 0.5s ease-in-out, opacity ;
+    transition: transform 800ms ease-in-out, opacity ;
     
         
 }
@@ -554,9 +554,9 @@ div.check i.fa-circle-check {
 }
 
 div.plat:hover div.check i.fa-circle-check {
-    transition-duration: 500ms;
+    transition-duration: 800ms;
     transition-delay: 0ms;
-    transform: rotate(3turn);
+    transform: rotate(1turn);
 }
 
 section.plats h2 {
