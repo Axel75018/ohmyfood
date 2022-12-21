@@ -1,4 +1,4 @@
-html {background-color:#fff}
+html {background-color:#99E2D0}
 
 body {
     width: 100%;
@@ -30,8 +30,10 @@ section.fonctionnement div.container , section.resto div.container, footer div.c
 .menu__main {
     background-color:#f2f2f2;
     margin-top:-150px;
+    border-radius : 25px;
+    margin-bottom: 40px;    
 }
-
+section.plats h2 {margin-left:0px;}
 div.containerMenu {
     width:100%;
     display: flex;
@@ -44,6 +46,13 @@ div.containerMenu {
 section.entrees { padding-top: 0px;}
 
 div.titreresto {justify-content: space-around;}
+
+
+div.titreresto div.heart  {
+    position:relative;
+    height: 1rem;;
+}
+
 .explorer__h2 {width:100%;}
 div.banniere {
     width: 100%;
@@ -89,8 +98,11 @@ article.card figure img {
 }
 
 .header.menu__header {
-    width:52%;
+    width:100%;
     justify-content: space-between;
+}
+h2.plats {
+    margin-left: 0px;;
 }
 
 section.commander{
