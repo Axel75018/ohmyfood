@@ -563,13 +563,7 @@ div.plat .check i {
     margin: auto;
 }
 
-/*div.plat:hover {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 
-
-}*/
 
 div.plat div.check {
     position: absolute;
@@ -590,6 +584,7 @@ div.plat div.check {
 
 
 
+
 div.plat:hover div.check {
     transform: scaleX(1);
     transform-origin: right;
@@ -599,12 +594,26 @@ div.plat:hover div.check {
 
 /********rotation*****/
 
-div.check i.fa-circle-check {
+        /***fond cercle blanc***/
+div.check div.fondCercle {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: auto;
+    background-color: white;
+    border-radius: 50% ;
+    display: flex;
+}
 
+
+
+div.check i.fa-check {
+
+    color:#99E2D0; 
+    font-weight: 900;
     transition: transform 2s ease-in-out;
 }
 
-div.plat:hover div.check i.fa-circle-check {
+div.plat:hover div.check i.fa-check {
     transition-duration: 800ms;
     transition-delay: 0ms;
     transform: rotate(1turn);
@@ -799,7 +808,7 @@ section.commander button {
 body.home {
     visibility: hidden;
     animation-name: backgrounddis;
-    animation-delay: 3s;
+    animation-delay: 6s;
     animation-duration: 0s;
     animation-fill-mode: forwards;
 }
@@ -812,7 +821,7 @@ body.home {
     transform: translate(-50%, -50%);
     animation-name: backgroundapp;
     animation-delay: 0s;
-    animation-duration: 3s;
+    animation-duration: 6s;
     animation-fill-mode: forwards;
 }
 
