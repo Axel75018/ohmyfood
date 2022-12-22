@@ -21,32 +21,25 @@
 
 </head>
 
-<body class="">
- <!-----   ---------desctive fond-
-    <div className={this.state.loading ? 'parentDisable' : '' } width="100%">
-        <div className='overlay-box'>
-            <PropagateLoader // css={override} sizeUnit={"px"} size={25} color={'white'} loading={this.state.loading} />
+<body class="home">
 
-            <!------spinner---
-            <div class="lds-spinner spinnerA">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <!----fin spinner ---
-        
-        </div>
+
+
+    <div class="loader spinnerA">
+        <svg viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <circle class="load one" cx="60" cy="60" r="40" />
+            <circle class="load two" cx="60" cy="60" r="40" />
+            <circle class="load three" cx="60" cy="60" r="40" />
+            <g>
+                <circle class="point one" cx="45" cy="70" r="5" />
+                <circle class="point two" cx="60" cy="70" r="5" />
+                <circle class="point three" cx="75" cy="70" r="5" />
+            </g>
+        </svg>
     </div>
-    ----->
+
+
+
     <header class="header">
         <a href="#">
             <h1 class="fancy">Ohmyfood</h1>
@@ -66,114 +59,127 @@
         </section>
         <!--------------fonctionnement------------------>
         <section class="fonctionnement">
-                 <div class="container">
+            <div class="container">
                 <h2>Fonctionnement</h2>
-            <ol class="listeBoutonFonctionnement__ol">
-                <li class="listeBoutonFonctionnement__li shadow"><span class="listeBoutonFonctionnement__li__span"><i
-                            class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</span></li>
-                <li class="listeBoutonFonctionnement__li shadow"><span class="listeBoutonFonctionnement__li__span"><i
-                            class="fa-solid fa-list-ul"></i>Composez votre menu</span></li>
-                <li class="listeBoutonFonctionnement__li shadow"><span class="listeBoutonFonctionnement__li__span"><i
-                            class="fa-solid fa-store"></i>Dégustez au restaurant</span></li>
-            </ol>
-        </div>
+                <ol class="listeBoutonFonctionnement__ol">
+                    <li class="listeBoutonFonctionnement__li shadow"><span
+                            class="listeBoutonFonctionnement__li__span"><i
+                                class="fa-solid fa-mobile-screen-button"></i>Choisissez un restaurant</span></li>
+                    <li class="listeBoutonFonctionnement__li shadow"><span
+                            class="listeBoutonFonctionnement__li__span"><i class="fa-solid fa-list-ul"></i>Composez
+                            votre menu</span></li>
+                    <li class="listeBoutonFonctionnement__li shadow"><span
+                            class="listeBoutonFonctionnement__li__span"><i class="fa-solid fa-store"></i>Dégustez au
+                            restaurant</span></li>
+                </ol>
+            </div>
         </section>
         <!----------- ------------------------resto----------------------------->
         <section class="resto">
             <div class="container">
-            <h2>Restaurants</h2>
-            <div class="liste">
-            <article class="card">
-                <a href="la_palette_du_gout.html">
-                    <h4 class="article__h4 article__h4--nouveau">Nouveau</h4>
-                    <figure>
-                        <img src="images/restaurants/jay-wennington.jpg"
-                            alt="Restaurant La palette du gout avec ohmyfood">
-                    </figure>
-                    <div class="containerBasCard">
-                        <div class="texteCard">
-                            <h3>La palette du gout</h3>
-                            <p>menilmontant</p>
-                        </div>
+                <h2>Restaurants</h2>
+                <div class="liste">
+                    <article class="card">
+                        <a href="la_palette_du_gout.html">
+                            <h5 class="article__h5 article__h5--nouveau">Nouveau</h5>
+                            <figure>
+                                <img src="images/restaurants/jay-wennington.jpg"
+                                    alt="Restaurant La palette du gout avec ohmyfood">
+                            </figure>
+                            <div class="containerBasCard">
+                                <div class="texteCard">
+                                    <h3>La palette du gout</h3>
+                                    <p>menilmontant</p>
+                                </div>
+                                <div class="heart">
 
-                        <i class="fa-regular fa-heart"></i>
-                    
-                    </div>
-                </a>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <h4 class="article__h4 article__h4--nouveau">Nouveau</h4>
-                    <figure>
-                        <img src="images/restaurants/assietes-port.jpg"
-                            alt="Restaurant La note enchantée avec ohmyfood">
-                    </figure>
-                    <div class="containerBasCard">
-                        <div class="texteCard">
-                            <h3>La note enchantée</h3>
-                            <p>Charonne</p>
-                        </div>
-                        <i class="fa-solid fa-heart grad" ></i>
-                        <i class="fa-regular fa-heart"></i>
-                        
-                    </div>
-                </a>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <h4 class="article__h4">Nouveau</h4>
-                    <figure>
-                        <img src="images/restaurants/toa-heftibah.jpg" alt="Restaurant À la française avec ohmyfood">
-                    </figure>
-                    <div class="containerBasCard">
-                        <div class="texteCard">
-                            <h3>À la française</h3>
-                            <p>Cité Rouge</p>
-                        </div>
+                                <i class="fa-regular fa-heart hautDroite"></i>
+                                <i class="fa-solid fa-heart grad hautDroite"></i>
+                            </div>
 
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </a>
-            </article>
-            <article class="card">
-                <a href="#">
-                    <h4 class="article__h4">Nouveau</h4>
-                    <figure>
-                        <img src="images/restaurants/louis-hansel.jpg"
-                            alt="Restaurant Le délice des sens avec ohmyfood">
-                    </figure>
-                    <div class="containerBasCard">
-                        <div class="texteCard">
-                            <h3>Le délice des sens</h3>
-                            <p>Folie-Méricourt</p>
-                        </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="la_note_enchantee.html">
+                            <h5 class="article__h5 article__h5--nouveau">Nouveau</h5>
+                            <figure>
+                                <img src="images/restaurants/assietes-port.jpg"
+                                    alt="Restaurant La note enchantée avec ohmyfood">
+                            </figure>
+                            <div class="containerBasCard">
+                                <div class="texteCard">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div>
+                                <div class="heart">
 
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </a>
-            </article>
-        </div>
-    </div>
+                                    <i class="fa-regular fa-heart hautDroite"></i>
+                                    <i class="fa-solid fa-heart grad hautDroite"></i>
+                                </div>
+
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="#">
+                            <h5 class="article__h5">Nouveau</h5>
+                            <figure>
+                                <img src="images/restaurants/toa-heftibah.jpg"
+                                    alt="Restaurant À la française avec ohmyfood">
+                            </figure>
+                            <div class="containerBasCard">
+                                <div class="texteCard">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+
+                                <div class="heart">
+
+                                    <i class="fa-regular fa-heart hautDroite"></i>
+                                    <i class="fa-solid fa-heart grad hautDroite"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                    <article class="card">
+                        <a href="#">
+                            <h5 class="article__h5">Nouveau</h5>
+                            <figure>
+                                <img src="images/restaurants/louis-hansel.jpg"
+                                    alt="Restaurant Le délice des sens avec ohmyfood">
+                            </figure>
+                            <div class="containerBasCard">
+                                <div class="texteCard">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+
+                                <div class="heart">
+
+                                    <i class="fa-regular fa-heart hautDroite"></i>
+                                    <i class="fa-solid fa-heart grad hautDroite"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </div>
         </section>
 
     </main>
     <footer>
         <div class="container">
-        <h2 class="fancy">ohmyfood</h2>
+            <h2 class="fancy">ohmyfood</h2>
 
 
-        <ul class="footer__ul">
-            <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
-            <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir Partenaire</a></li>
-            <li><a href="#">Mentions légales</a></li>
-            <li><a href="mailto:axel.calvet@gmail.com">Contact</a></li>
-        </ul>
-    </div>
-
-
-
-
-
+            <ul class="footer__ul">
+                <li><a href="#"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i> Devenir Partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:axel.calvet@gmail.com">Contact</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
