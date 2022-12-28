@@ -1,4 +1,12 @@
-html {background-color:#99E2D0}
+html {background-color:#c3eee4;
+    animation: fondBlanc;
+    animation-duration: 4s;
+}
+
+@keyframes fondBlanc {
+    0% { background-color:white;}
+    100%{ background-color:#c3eee4;}   
+}
 
 body {
     width: 100%;
@@ -9,6 +17,7 @@ body {
 img.menu__main__baniere {
     object-fit:cover;
     height: 500px;
+    object-position: 0 60% ;
 }
 
 main  {
@@ -49,8 +58,8 @@ div.titreresto {justify-content: space-around;}
 
 
 div.titreresto div.heart  {
-    position:relative;
-    height: 1rem;;
+    position: relative;
+    height: 1rem;
 }
 
 .explorer__h2 {width:100%;}

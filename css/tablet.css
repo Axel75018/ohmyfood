@@ -1,0 +1,171 @@
+html {background-color:#c3eee4;
+    animation: fondBlanc;
+    animation-duration: 4s;
+}
+
+@keyframes fondBlanc {
+    0% { background-color:white;}
+    100%{ background-color:#c3eee4;}   
+}
+
+body {
+    width: 100%;
+    
+    
+}
+
+img.menu__main__baniere {
+    object-fit:cover;
+    height: 500px;
+    object-position: 0 60% ;
+}
+
+main  {
+    width :100%;
+    margin: auto;
+}
+.menu__main {
+    display: flex;
+    flex-direction: column;
+}
+
+section.fonctionnement div.container , section.resto div.container, footer div.container, .menu__main
+{
+    width:100%;    
+    margin:auto;
+}
+
+.menu__main {
+    background-color:#f2f2f2;
+    margin-top:-150px;
+    border-radius : 25px;
+    margin-bottom: 40px;    
+}
+section.plats h2 {margin-left:0px;}
+div.containerMenu {
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.entrees, .plats, .dessert {
+    width: 32%;
+}
+
+section.entrees { padding-top: 0px;}
+
+div.titreresto {justify-content: space-around;}
+
+
+div.titreresto div.heart  {
+    position: relative;
+    height: 1rem;
+}
+
+.explorer__h2 {width:100%;}
+div.banniere {
+    width: 100%;
+    height:600px;
+} 
+.fonctionnement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ol.listeBoutonFonctionnement__ol {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.listeBoutonFonctionnement__li {
+    width: 30%;
+    display: inline;
+}
+
+div.liste {
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;   
+
+}
+article.card {
+    width: 45%;
+    height : 250px;
+    margin:1px;
+}
+
+article.card figure img {
+    width: 100%;
+    
+}
+
+.header.menu__header {
+    width:100%;
+    justify-content: space-between;
+}
+h2.plats {
+    margin-left: 0px;;
+}
+
+section.commander{
+    width:100%;
+}
+footer div.container {
+width:100%;
+    max-width:1280px;
+    margin:auto;
+}
+
+div.plat:hover div.noCheck {
+    width:82%;
+}
+
+/*div.plat h3 {
+    margin: 0 0 6px 0px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}*/
+
+div.plat div.descPrix h3.prix {
+    margin: 0 8px 0 0;
+    white-space: break-spaces;
+    text-overflow: unset;
+    overflow: initial;
+}
+
+.entrees, .plats, .dessert, .commander {
+    padding: 0 4px;
+}
+
+div.plat {padding:5px;}
+
+div.plat div.check {
+    width:30px;
+}
+
+.listeBoutonFonctionnement__li {
+    width: 50%;
+    display: inline;
+}
+
+ol.listeBoutonFonctionnement__ol {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+img.menu__main__baniere {
+    object-fit: cover;
+    height: 500px;
+    object-position: 0 60%;
+}
