@@ -2,17 +2,6 @@
     box-sizing: border-box;
 }
 
-.primColor {
-    color: #9356DC;
-}
-
-.secColor {
-    color: #FF79DA
-}
-
-.terColor {
-    color: #99E2D0
-}
 
 
 html {
@@ -32,17 +21,16 @@ html {
 }
 footer .fancy {color:white;
 margin:0 0 12px 0;
-font-size: 1,2rem ;
+font-size: 1.2rem ;
 font-weight: 400;
 
 }
 .menu__main h2.fancy:before {
     content:none;
-
 }
 h1 {
     
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 h2 {   

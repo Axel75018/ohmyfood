@@ -1,12 +1,8 @@
-html {background-color:#c3eee4;
-    animation: fondBlanc;
-    animation-duration: 4s;
+html {
+    
 }
 
-@keyframes fondBlanc {
-    0% { background-color:white;}
-    100%{ background-color:#c3eee4;}   
-}
+
 
 body {
     width: 100%;
@@ -45,10 +41,10 @@ section.plats h2 {margin-left:0px;}
 div.containerMenu {
     width:100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 .entrees, .plats, .dessert {
-    width: 32%;
+    width: 100%;
 }
 
 section.entrees { padding-top: 0px;}
@@ -118,7 +114,7 @@ section.commander{
 }
 footer div.container {
 width:100%;
-    max-width:1280px;
+    max-width:1023px;
     margin:auto;
 }
 
@@ -126,13 +122,6 @@ div.plat:hover div.noCheck {
     width:82%;
 }
 
-/*div.plat h3 {
-    margin: 0 0 6px 0px;
-    font-size: 1.2rem;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}*/
 
 div.plat div.descPrix h3.prix {
     margin: 0 8px 0 0;
@@ -145,10 +134,13 @@ div.plat div.descPrix h3.prix {
     padding: 0 4px;
 }
 
-div.plat {padding:5px;}
+div.plat {padding:5px;
+    width:70%;
+    margin:10px auto;
+    }
 
 div.plat div.check {
-    width:30px;
+    width:60px;
 }
 
 .listeBoutonFonctionnement__li {
