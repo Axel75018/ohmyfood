@@ -1,3 +1,9 @@
+
+
+/* Animation chargement de la page **********************************/
+
+/*... fond blanc à vert ****/
+
 html {background-color:#c3eee4;
     animation: fondBlanc;
     animation-duration: 4s;
@@ -9,8 +15,7 @@ html {background-color:#c3eee4;
 }
 
 body {
-    width: 100%;
-    
+    width: 100%;    
     
 }
 
