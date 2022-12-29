@@ -210,13 +210,14 @@ ol.listeBoutonFonctionnement__ol li:before {
 .listeBoutonFonctionnement__li:hover {
     background-color: #f5edff;
     box-shadow: 0 8px 22px 0 rgba(0, 0, 0, 0.4);
-    transition: 0.5s;
+    transition: 0.4s;
 }
 
 .listeBoutonFonctionnement__li:hover span i {
     color: black;
     font-size: 1.3em;
-    transition: 0.5s;
+    transition-duration: 0.4s ;
+    
 }
 
 
@@ -499,12 +500,13 @@ div.plat div.noCheck {
     display: flex;
     flex-direction: column;
     width: 100%;
-    transition: 700ms;
+    transition: 1200ms;
 
 }
 
 div.plat:hover div.noCheck {
     width: 260px;
+    
 }
 
 
