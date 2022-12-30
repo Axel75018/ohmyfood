@@ -112,20 +112,16 @@ body.home {
     animation-delay: 0s;
     animation-duration: 5s;
     animation-fill-mode: forwards;
-
 }
-
 
 @keyframes backgroundapp {
     0% {
         visibility: visible;
         opacity: 1;
     }
-
     90% {
         opacity: 1;
     }
-
     100% {
         visibility: hidden;
         opacity: 0;
@@ -392,7 +388,7 @@ svg {
 
 /****anim bouton****/
 .explorer__button:hover {
-    filter: brightness(1.3);
+    filter: brightness(1.2);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
     transition: 0.3s;
 }
@@ -563,14 +559,16 @@ article.card:hover {
 
 /*********coeur et anim coeur *****/
 
-/***On cache le coeur plein ***/
+/***On cache le coeur plein 
+coeur plein transparent 
+qui laisse voire le dégradé***/
+
 .fa-heart.fa-solid {
     opacity: 0;
     background: linear-gradient(0deg, #9356dc, #ff79da);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-
 }
 
 .containerBasCard div.heart {
@@ -582,7 +580,6 @@ article.card:hover {
     position: absolute;
     top: 0;
     right: 0;
-
 }
 
 div.heart:hover .fa-heart.fa-regular {
@@ -591,21 +588,12 @@ div.heart:hover .fa-heart.fa-regular {
     visibility: hidden;
 }
 
-/*******Wow before et content 
-
-.fa-solid.fa-heart::before {
-    content: "\f004"; 
-    
-}
-****/
-
 /****on fait apparaitre le coeur doucement ******/
 
 div.heart:hover .fa-heart.fa-solid {
     opacity: 1;
     transition-duration: 900ms;
     transition-timing-function: cubic-bezier(0.79, 0.33, 0.14, 0.53);
-
 }
 
 /*********footer**********************/
@@ -642,12 +630,17 @@ footer {
     padding: 0 20px;
 }
 
+img.menu__main__baniere {
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
 .menu__header i {
     font-size: 1.5rem;
 }
 
 /*****div plat anim carte qui tombent****/
-
 @keyframes animplat {
     0% {
         transform: translate(0, 20px);
@@ -662,16 +655,12 @@ footer {
         transform: translate(0, 0px);
         opacity: 1;
     }
-
 }
 
 div.containerMenu div.plat {
-
     animation-name: animplat;
     animation-duration: 400ms;
     animation-fill-mode: backwards;
-
-
 }
 
 /***** ajout d'un différé en boucle avec une variable ****/ 
@@ -708,11 +697,7 @@ $anim-delay: 100ms;
     justify-content: space-around;
 }
 
-img.menu__main__baniere {
-    height: 320px;
-    width: 100%;
-    object-fit: cover;
-}
+
 
 
 div.titreresto {
@@ -816,10 +801,11 @@ div.plat div.descPrix {
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
+    padding-right: 6px;
 
 }
 
-div.plat div.descPrix p {
+div.plat div.descPrix p {    
     margin: 0;
     font-size: 0.95rem;
     font-weight: 400;
@@ -831,7 +817,7 @@ div.plat div.descPrix p {
 }
 
 div.plat div.descPrix h3.prix {
-    margin: 0 8px 0 0;
+    margin: 0;
     white-space: break-spaces;
     text-overflow: unset;
 
@@ -912,11 +898,10 @@ section.commander button {
 
 
 /******anim*****/
+
 .listePlat {
     position: relative;
     text-overflow: ellipsis;
-
-
 }
 
 .plat {
