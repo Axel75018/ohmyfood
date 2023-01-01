@@ -75,8 +75,7 @@ a:visited {
 body.home {
   visibility: hidden;
   animation-name: backgrounddis;
-  animation-delay: 5s;
-  animation-duration: 0;
+  animation-delay: 5s;  
   animation-fill-mode: forwards;
 }
 
@@ -750,7 +749,7 @@ div.plat div.descPrix p {
 
 div.plat div.descPrix h3.prix {
   margin: 0;
-  white-space: break-spaces;
+  white-space: nowrap;
   text-overflow: unset;
 }
 
