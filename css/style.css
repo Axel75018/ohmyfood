@@ -75,7 +75,7 @@ a:visited {
 body.home {
   visibility: hidden;
   animation-name: backgrounddis;
-  animation-delay: 5s;  
+  animation-delay: 5s;
   animation-fill-mode: forwards;
 }
 
@@ -751,6 +751,7 @@ div.plat div.descPrix h3.prix {
   margin: 0;
   white-space: nowrap;
   text-overflow: unset;
+  font-size: 1rem;
 }
 
 /*******animation à l'intérieur des cartes *****/
@@ -772,6 +773,11 @@ div.plat div.check {
 div.plat:hover div.check {
   transform: scaleX(1);
   transform-origin: right;
+}
+
+/*******paragraphe raccourci pour laisser la place au prix ******/
+div.plat:hover div.descPrix p {
+  max-width: 210px;
 }
 
 /********rotation du check*****/

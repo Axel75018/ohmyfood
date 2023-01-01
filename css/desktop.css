@@ -131,3 +131,7 @@ width:100%;
 div.plat:hover div.noCheck {
     width:310px;
 }
+
+div.plat:hover div.descPrix p {
+    max-width:max-content;
+}

@@ -151,3 +151,7 @@ ol.listeBoutonFonctionnement__ol {
     flex-wrap: wrap;
     align-content: center;
 }
+
+div.plat:hover div.descPrix p {
+    max-width:max-content;
+}

@@ -819,6 +819,7 @@ div.plat div.descPrix h3.prix {
     margin: 0;
     white-space: nowrap;
     text-overflow: unset;
+    font-size: 1rem;
 
 }
 
@@ -844,7 +845,11 @@ div.plat:hover div.check {
     transform: scaleX(1);
     transform-origin: right;
 }
+/*******paragraphe raccourci pour laisser la place au prix ******/
 
+div.plat:hover div.descPrix p {
+    max-width:210px;
+}
 /********rotation du check*****/
 div.plat .check i {
 
